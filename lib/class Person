@@ -1,0 +1,16 @@
+class Person
+ def initialize(name)
+ 	@name = name
+ end
+
+ def self.create(name, ssn)
+ 	person = Person.new
+ 	person.name = name
+ 	person.ssn = ssn
+ 	@@all << person
+ end
+
+end
+
+Person.new("ned")
+Person.create('ned')
